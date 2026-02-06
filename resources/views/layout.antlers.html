@@ -1,24 +1,16 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-        {{ branding:font_hero }}
-        {{ branding:font_body_copy}}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ alt_seo:meta }}
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
-        <style>
-            :root {
-                --primary_colour: {{ branding:primary_colour }};
-                --secondary_colour: {{ branding:secondary_colour }};
-                --background: {{ branding:background }};
-                --object_bg_colour: {{ branding:object_colour }}
-            }
-        </style>
     </head>
-    <body class="space-y-20 bg-cover bg-center overscroll-none overflow-x-hidden !bg-[var(--background)]">
-            {{ partial:Partials/nav }}
-                {{ template_content }}
-            {{ partial:Partials/footer }}
+    <body class="alt_starter_kit page-{{ slug }} relative" x-data="{navOpen: false}">
+        {{ partial src="_parts/header"}}
+        {{ template_content }}
+        {{ partial src="_parts/footer"}}
+        {{ AltCookies:Toast }}
     </body>
 </html>

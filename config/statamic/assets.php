@@ -14,7 +14,7 @@ return [
         |
         */
 
-        'route' => 'img',
+        'route' => 'cached-img',
 
         /*
         |--------------------------------------------------------------------------
@@ -67,8 +67,8 @@ return [
         |
         */
 
-        'cache' => false,
-        'cache_path' => public_path('img'),
+        'cache' => true,
+        'cache_path' => public_path('cached-img'),
 
         /*
         |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ return [
         |--------------------------------------------------------------------------
         |
         | You may define global defaults for all manipulation parameters, such as
-        | quality, format, and sharpness. These can and will be overwritten
+        | quality, format, and sharpness. These can and will be be overwritten
         | on the tag parameter level as well as the preset level.
         |
         */

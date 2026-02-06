@@ -83,9 +83,7 @@ return [
 
         'class' => null,
 
-        'rules' => [
-            //
-        ],
+        'rules' => 'all',
 
     ],
 
@@ -101,33 +99,6 @@ return [
     */
 
     'ignore_query_strings' => false,
-
-    'allowed_query_strings' => [
-        //
-    ],
-
-    'disallowed_query_strings' => [
-        //
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Nocache
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define where the nocache data is stored.
-    |
-    | https://statamic.dev/tags/nocache#database
-    |
-    | Supported drivers: "cache", "database"
-    |
-    */
-
-    'nocache' => 'cache',
-
-    'nocache_db_connection' => env('STATAMIC_NOCACHE_DB_CONNECTION'),
-
-    'nocache_js_position' => 'body',
 
     /*
     |--------------------------------------------------------------------------
@@ -149,31 +120,11 @@ return [
     | Warm Queue
     |--------------------------------------------------------------------------
     |
-    | Here you may define the queue name and connection
-    | that will be used when warming the static cache and
-    | optionally set the "--insecure" flag by default.
+    | Here you may define the name of the queue that requests will be pushed
+    | onto when warming the static cache using the static:warm command.
     |
     */
 
-    'warm_queue' => env('STATAMIC_STATIC_WARM_QUEUE'),
-
-    'warm_queue_connection' => env('STATAMIC_STATIC_WARM_QUEUE_CONNECTION'),
-
-    'warm_insecure' => env('STATAMIC_STATIC_WARM_INSECURE', false),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Shared Error Pages
-    |--------------------------------------------------------------------------
-    |
-    | You may choose to share the same statically generated error page across
-    | all errors. For example, the first time a 404 is encountered it will
-    | be generated and cached, and then served for all subsequent 404s.
-    |
-    | This is only supported for half measure.
-    |
-    */
-
-    'share_errors' => false,
+    'warm_queue' => null,
 
 ];

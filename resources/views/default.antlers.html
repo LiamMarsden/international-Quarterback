@@ -1,29 +1,3 @@
-<!doctype html>
-<html lang="{{ site:short_locale }}">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-        {{ branding:font_hero }}
-        {{ branding:font_body_copy}}
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-        <style>
-            :root {
-                --primary_colour: {{ branding:primary_colour }};
-                --secondary_colour: {{ branding:secondary_colour }};
-                --background: {{ branding:background }};
-                --object_bg_colour: {{ branding:object_colour }}
-            }
-        </style>
-    </head>
-    <body class="space-y-20 bg-cover bg-center overscroll-none overflow-x-hidden bg-black/60">
-
-{{ partial:Partials/banner3 }}
-<div class="container container-main w-full text-lg">
-    <div class="richtext">
-  {{ bard_field }}
-</div>
-</div>
-
-    </body>
-</html>
+{{ page_builder }}
+{{ partial src="_page_builder/{type}" }}
+{{ /page_builder }}
