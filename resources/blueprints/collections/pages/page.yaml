@@ -1,0 +1,75 @@
+title: Content
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Page Content'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: 'Banner Video'
+        fields:
+          -
+            import: banner_video
+      -
+        display: 'Banner One'
+        fields:
+          -
+            import: banner_one
+      -
+        display: 'Banner Two'
+        fields:
+          -
+            import: banner_two
+      -
+        display: 'Banner Three'
+        fields:
+          -
+            import: banner_three
+      -
+        display: Cards
+        fields:
+          -
+            import: cards
+      -
+        display: Gallery
+        fields:
+          -
+            import: gallery
+      -
+        display: Testimonials
+        fields:
+          -
+            import: testimonials
+      -
+        display: Accordion
+        fields:
+          -
+            import: accordion
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

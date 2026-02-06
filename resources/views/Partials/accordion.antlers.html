@@ -1,0 +1,18 @@
+<!-- Accordion Start -->
+
+<div class="container-main container px-6">
+    <div class="accordion space-y-2">
+        {{ accordion }}
+            <div class="accordion-item border-2 border-[var(--primary_colour)] rounded-lg overflow-hidden">
+                <button class="accordion-header w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center !bg-[var(--object_bg_colour)]/20 hover:!bg-[var(--object_bg_colour)]/40 rounded-lg" aria-expanded="false">
+                <p class="!text-[var(--primary_colour)]">{{ display_text }}</p><p class="text-7xl">+</p>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="px-4 py-2">{{ content }}</p>
+                </div>
+            </div>
+        {{ /accordion }}
+    </div>
+</div>
+
+    <!-- Accordion End -->

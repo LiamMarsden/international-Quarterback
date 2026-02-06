@@ -1,0 +1,20 @@
+title: Branding
+data:
+  primary_colour: '#7a7a7a'
+  secondary_colour: '#669c35'
+  background: '#ebebeb'
+  object_colour: '#232323'
+  logo_primary: Logo-white_1.svg
+  logo_secondary: logo-secondary.svg
+  font_hero:
+    code: |-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    mode: htmlmixed
+  font_body_copy:
+    code: |-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    mode: htmlmixed

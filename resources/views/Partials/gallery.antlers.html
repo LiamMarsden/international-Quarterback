@@ -1,0 +1,17 @@
+<!-- Logo Cloud Start -->
+
+      <div class="container space-y-8 text-center grid justify-items-center">
+          <h2 class="!text-[var(--primary_colour)]">{{ gallery_header }}</h2>
+          <p class="!text-[var(--primary_colour)]">{{ gallery_body_copy}}</p>
+          <div class="w-full overflow-hidden">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-stretch gap-1">
+                {{ gallery_field }}
+                  <div class="bg-[var(--object_bg_colour)]/20 hover:bg-[var(--object_bg_colour)]/40 rounded-lg cursor-pointer">
+                      <img class="scale-50 opacity-30" src="{{ glide :src="gallery_image" fit="crop_focal" }}" alt="">
+                  </div>
+                  {{ /gallery_field }}
+              </div>
+          </div>
+      </div>
+
+    <!-- Logo Cloud End -->

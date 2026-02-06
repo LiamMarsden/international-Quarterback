@@ -1,0 +1,8 @@
+name: 'Liam Marsden'
+super: true
+id: d7398260-62ae-4ee2-911b-6eb37e6cca0d
+password_hash: $2y$12$ZaKXsPRMVIks/JaLyFXkNupmgnQx8M2FPT.kj0r4t09l.hYUZiU4a
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

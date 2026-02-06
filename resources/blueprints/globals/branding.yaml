@@ -1,0 +1,55 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: primary_colour
+            field:
+              type: color
+              display: 'Primary Colour'
+              width: 33
+          -
+            handle: secondary_colour
+            field:
+              type: color
+              display: 'Secondary Colour'
+              width: 33
+          -
+            handle: background
+            field:
+              type: color
+              display: Background
+              width: 33
+          -
+            handle: object_colour
+            field:
+              type: color
+              display: 'object Colour'
+          -
+            handle: logo_primary
+            field:
+              container: assets
+              type: assets
+              display: Logo-Primary
+              max_files: 1
+              min_files: 1
+          -
+            handle: logo_secondary
+            field:
+              container: assets
+              type: assets
+              display: Logo-Secondary
+              max_files: 1
+              min_files: 1
+          -
+            handle: font_hero
+            field:
+              type: code
+              display: 'Font Hero'
+          -
+            handle: font_body_copy
+            field:
+              type: code
+              display: 'Font Body Copy'

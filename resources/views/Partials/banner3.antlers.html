@@ -1,0 +1,14 @@
+      <!-- Banner 3 Start -->
+  {{ banner_three }}
+      <div class="relative bg-contain bg-no-repeat bg-blend-multiply bg-opacity-30 bg-center px-10 py-44" style="background-image: url({{ glide :src="b3_image" fit="crop_focal" }})">
+        <div class="absolute inset-0"></div>
+        <div class="w-full md:w-5/12 px-3 md:px-0 md:ml-12 relative z-10 flex flex-col space-y-6 h-full">
+          <h1 class="!text-[var(--primary_colour)] text-balance">
+          {{ b3_header }}
+          </h1>
+          <p class="!text-[var(--primary_colour)]" >{{ b3_body_copy}}</p>
+          <button class="!text-[var(--primary_colour)] !bg-[var(--object_bg_colour)]/20 hover:!bg-[var(--object_bg_colour)]/40">{{ b3_cta }}</button>
+        </div>
+      </div>
+  {{ /banner_three }}
+    <!-- Banner 3 End -->

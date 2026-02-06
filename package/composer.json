@@ -1,0 +1,24 @@
+{
+    "name": "eugene/albert-starterkit",
+    "extra": {
+        "statamic": {
+            "name": "albert",
+            "description": "Private starterkit"
+        },
+        "laravel": {
+            "providers": [
+                "Eugene\\Albert\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Eugene\\Albert\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

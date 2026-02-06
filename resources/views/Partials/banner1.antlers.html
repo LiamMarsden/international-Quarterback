@@ -1,0 +1,18 @@
+  <!-- Banner Start -->
+  {{ banner_one }}
+    <div class="w-full px-6 container-main container">
+      <div class="container flex flex-col md:flex-row gap-4">
+      <div class="space-y-6 w-full md:w-1/2 content-center py-8 md:py-44">
+        <h1 class="!text-[var(--primary_colour)]">
+          {{ b1_header }}
+        </h1>
+        <p class="!text-[var(--primary_colour)]">{{ b1_body_copy}}</p>
+        <button class="!text-[var(--primary_colour)] !bg-[var(--object_bg_colour)]/20 hover:!bg-[var(--object_bg_colour)]/40">{{ b1_cta }}</button>
+      </div>
+      <div class="order-first md:order-none w-full md:w-1/2 object-cover">
+        <img class="w-full h-full object-contain scale-75" src="{{ glide :src="b1_image" fit="crop_focal" }}" alt="">
+      </div>
+      </div>
+    </div>
+{{ /banner_one }}
+  <!-- Banner End -->

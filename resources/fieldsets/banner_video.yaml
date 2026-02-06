@@ -1,0 +1,7 @@
+title: 'Banner Video'
+fields:
+  -
+    handle: video_banner
+    field:
+      type: video
+      display: 'Banner Video'

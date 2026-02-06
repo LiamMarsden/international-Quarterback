@@ -1,0 +1,32 @@
+title: Gallery
+fields:
+  -
+    handle: gallery_header
+    field:
+      type: text
+      display: 'Gallery Header'
+  -
+    handle: gallery_body_copy
+    field:
+      type: textarea
+      display: 'Gallery Body Copy'
+  -
+    handle: gallery_field
+    field:
+      type: replicator
+      display: 'Gallery Field'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: gallery_image
+                  field:
+                    container: assets
+                    type: assets
+                    display: 'gallery image'
+                    max_files: 1
+                    min_files: 1

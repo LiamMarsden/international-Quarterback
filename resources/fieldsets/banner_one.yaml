@@ -1,0 +1,33 @@
+title: 'Banner One'
+fields:
+  -
+    handle: banner_one
+    field:
+      type: group
+      display: 'Banner One'
+      fields:
+        -
+          handle: b1_header
+          field:
+            type: text
+            display: 'B1 Header'
+        -
+          handle: b1_body_copy
+          field:
+            type: textarea
+            display: 'B1 Body Copy'
+        -
+          handle: b1_cta
+          field:
+            type: text
+            display: 'B1 CTA'
+            width: 50
+        -
+          handle: b1_image
+          field:
+            max_files: 1
+            min_files: 1
+            container: assets
+            type: assets
+            display: 'B1 Image'
+            width: 50
